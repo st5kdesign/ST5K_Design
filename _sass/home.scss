@@ -1,6 +1,71 @@
+/* =========================== INDEX PAGE STYLES ========================= */
 
-.nav-link a{
-  color: #000000;
-  font-family: 'Unica One', cursive;
-  text-align: center;
+body {
+   height: 100vh;
+   background-image: url("../img/background-image_sm.jpg");
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   background-color: rgb(255,255,255);
+}
+
+.home-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+        display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-nav-container {
+   width: 150px;
+   height: 300px;
+   display: flex;
+       display: -webkit-flex;
+   flex-wrap: wrap;
+       -webkit-flex-wrap:wrap;
+   justify-content: center;
+       -webkit-justify-content: center;
+  align-items: center;
+}
+
+.logo-main {
+}
+
+.main-nav {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding:0;
+    display: flex;
+        display: -webkit-flex;
+    flex-wrap: wrap;
+        -webkit-flex-wrap:wrap;
+    align-items: center;
+}
+
+.nav-item {
+    width: 100%;
+    font-family: 'Unica One', cursive;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 4px;
+        display: flex;
+    display: -webkit-flex;
+        justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.nav-item a {
+  width: 100%;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.nav-item a:hover {
+  width: 100%;
+  color: rgb(33, 200, 209);
+  background-color: rgb(0, 0, 0);
 }

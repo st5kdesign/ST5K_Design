@@ -1,0 +1,76 @@
+/* ===================== PORTFOLIO PAGE POSITIONING =================== */
+
+html {
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(217, 217, 217);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.content {
+  width: 90%;
+  height: 85%;
+  background-color: rgb(255,255,255);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.info-wrapper {
+  width: 45%;
+  height: 65%;
+}
+
+.images {
+  width: 65%;
+  height: 100%;
+  background-color: violet;
+}
+
+/* ======================= PORTFOLIO PAGE TYPOGRAPHY ===================== */
+
+.title {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.substrate-method {
+  font-style: italic;
+  color:rgb(33, 200, 209);
+  margin-top: 0;
+  font-size: 1.125em;
+}
+
+.copy {
+  color:rgb(71, 71, 71);
+}
+
+.meta-categories {
+  padding:0;
+}
+
+.cat-title {
+  font-family: 'Unica One', cursive;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: .5px;
+  margin-bottom: 0;
+}
+
+.describer {
+  margin-top: 0;
+  font-style: italic;
+}

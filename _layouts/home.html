@@ -2,25 +2,38 @@
 layout: default
 ---
 
-<div class="home">
+<body>
 
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
+<main class="home-content">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+  <section class="logo-nav-container">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="logo-main">
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+      <img src="img/st5k_logo.svg" width="105" height="105">
 
-</div>
+  </div>
+
+
+  <nav>
+
+       <ul class="main-nav">
+
+           <li class="nav-item"><a href="#">design</a></li>
+
+           <li class="nav-item"><a href="#">web</a></li>
+
+           <li class="nav-item"><a href="#">prints</a></li>
+
+       </ul>
+
+  </nav>
+
+  </section>
+
+
+</main>
+
+</body>
+
+</html>

@@ -3,33 +3,4 @@
 
   {% include head.html %}
 
-  <body class="home-img">
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <div class="container">
-
-          <div class="logo-wrapper">
-            <img src="" alt="" class="logo">
-          </div>
-
-          <nav class="site-nav">
-            <ul class="nav-wrapper">
-
-              {% for link in site.links %}
-                <li class="nav-link">
-                  <a href="{{ link.url }}">{{ link.title }}</a>
-                </li>
-              {% endfor %}
-
-            </ul>
-          </nav>
-
-        </div>
-
-      </div>
-    </main>
-
-  </body>
-
-</html>
+{{ content }}
