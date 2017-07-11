@@ -16,12 +16,12 @@
             </div>
 
             <header class="title_wrapper">
-              <h2 class="title">Panthera Leo</h2>
-              <p class="substrate-method">t-shirt; screenprint</p>
+              <h2 class="title">{{ page.title }}</h2>
+              <p class="substrate-method">{{ page.substrate }} {{ page.method }}</p>
             </header>
 
             <article class="copy-description">
-              <p class="copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p class="copy">{{ content }}</p>
             </article>
 
             <section class="meta-info">
@@ -36,8 +36,8 @@
                   <p class="cat-title">tools used</p>
 
                   <div class="icons">
-                    <img src="img/Illustrator.svg" width="15" height="15">
-                    <img src="img/Photoshop.svg" width="15" height="15">
+                    <img src="icons/Illustrator.svg" width="15" height="15">
+                    <img src="icons/Photoshop.svg" width="15" height="15">
                   </div>
 
                 </li>
@@ -49,7 +49,15 @@
 
       </section>
 
-      <section class="images"></section>
+      <section class="images">
+
+        <div class="carouselWrapper">
+
+          <img src="img/Panthera_Leo_BlackShirt.png" height="100%" alt="">
+
+        </div>
+
+      </section>
 
     </main>
 

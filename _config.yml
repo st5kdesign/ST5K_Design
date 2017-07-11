@@ -22,13 +22,12 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 instagram_username: st5kdesign
 github_username:  st5kdesign
 
-links:
-  - title: design
-    url: /design
-  - title: web
-    url: /web
-  - title: print
-    url: /print
+collections:
+  web:
+  prints:
+    output: true
+    permalink: /prints/:path/
+  design:
 
 # Build settings
 markdown: kramdown
