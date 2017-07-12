@@ -1,0 +1,158 @@
+/*
+FONTS
+font-family: 'Unica One', cursive;
+font-family: 'Crimson Text', serif;
+
+COLORS
+rgb(33, 200, 209) - Teal
+rgb(255,255,255) - White
+rgb(0,0,0) - Black
+
+*/
+
+/* =========================== GLOBAL STYLES ========================= */
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Unica One', cursive;
+}
+
+p {
+    font-family: 'Crimson Text', serif;
+}
+
+/* ===================== COLLECTION PAGE POSITIONING =================== */
+
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100vh;
+  background-image: url("../img/background-image_sm.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.content {
+  width: 90%;
+  height: 85%;
+  background-color: rgba(255,255,255,.85);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*-------------------  Info Overview Positioning  ---------------- */
+.info {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.info-wrapper {
+  width: 45%;
+  height: 65%;
+}
+
+.info-header-wrapper {
+  width: 100%;
+  padding: 5% 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.title_wrapper {
+  height: 100%;
+  margin-left: 5%;
+}
+
+.subNav {
+  padding: 0;
+  width: 100%;
+  display: flex;
+
+}
+
+a.subNav-item {
+  font-family: 'Unica One', cursive;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  color:rgb(192, 192, 192);
+  font-style: italic;
+  margin-right: 18px;
+}
+
+a.subNav-item:hover {
+  color:rgb(71, 71, 71);
+  font-style: normal;
+}
+
+/*----------------  Project Section Positioning  ---------------- */
+.projects {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.listWrapper {
+  width: 90%;
+  height: 90%;
+  display: flex;
+}
+
+.project_item {
+  width: 33%;
+  height: 23%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+ .project_thumbnail {
+   width: 75px;
+   height: 75px;
+   margin-bottom: 10%;
+ }
+
+/* ======================= COLLECTION PAGE TYPOGRAPHY ===================== */
+
+.title_lg {
+  text-transform: uppercase;
+  font-size: 2em;
+  margin: 0;
+  display: flex;
+  align-items:center;
+}
+
+.copy_lg {
+  color:rgb(71, 71, 71);
+  font-size: 1.125em;
+}
+
+.project_title {
+  text-transform: uppercase;
+  font-size: 1.375em;
+}
+
+.project_title,
+.project_subtitle {
+  margin:0;
+}
+
+.project_item a {
+  text-decoration: none;
+  color:rgb(0, 0, 0);
+}
