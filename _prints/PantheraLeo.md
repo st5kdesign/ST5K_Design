@@ -2,7 +2,7 @@
 layout: portfolio
 title: Panthera Leo
 permalink: /PantheraLeo/
-thumbnail: /img/Leo_thumb.png
+thumbnail: ./img/Leo_thumb.png
 substrate: t-shirt
 method: screenprint
 collection: prints
