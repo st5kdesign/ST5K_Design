@@ -11,9 +11,7 @@
 
           <section class="info-wrapper">
 
-            <div class="logo-small">
-                <a href="index.md"><img src="img/st5k_logo.svg" width="65" height="65"></a>
-            </div>
+            <a href="collection.html" class="nav-back">&lt;-back to collection</a>
 
             <header class="title_wrapper">
               <h2 class="title">{{ page.title }}</h2>
@@ -29,16 +27,19 @@
 
                 <li class="category">
                   <p class="cat-title">category</p>
-                  <p class="describer">personal work</p>
+                  <p class="describer">{{ page.category }}</p>
                 </li>
 
                 <li class="category">
                   <p class="cat-title">tools used</p>
 
-                  <div class="icons">
-                    <img src="icons/Illustrator.svg" width="15" height="15">
-                    <img src="icons/Photoshop.svg" width="15" height="15">
-                  </div>
+                  <ul class="icons">
+                    {% for tag in page.tags %}
+                        <li>
+                          <img src="/icons/{{tag}}.svg" width="15" height="15">
+                        </li>
+                    {% endfor %}
+                  </ul>
 
                 </li>
 

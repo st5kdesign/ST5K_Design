@@ -1,28 +1,3 @@
-/*
-FONTS
-font-family: 'Unica One', cursive;
-font-family: 'Crimson Text', serif;
-
-COLORS
-rgb(33, 200, 209) - Teal
-rgb(255,255,255) - White
-rgb(0,0,0) - Black
-
-*/
-
-/* =========================== GLOBAL STYLES ========================= */
-
-li {
-    list-style: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Unica One', cursive;
-}
-
-p {
-    font-family: 'Crimson Text', serif;
-}
 
 /* ===================== COLLECTION PAGE POSITIONING =================== */
 
@@ -45,7 +20,7 @@ body {
 .content {
   width: 90%;
   height: 85%;
-  background-color: rgba(255,255,255,.85);
+  background-color: rgba(255,255,255,.93);
   display: flex;
   flex-wrap: wrap;
 }
@@ -54,6 +29,7 @@ body {
 .info {
   width: 35%;
   height: 100%;
+  background-color: rgb(255,255,255);
   display: flex;
   justify-content:center;
   align-items: center;

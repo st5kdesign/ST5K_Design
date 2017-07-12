@@ -1,20 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/collection.css" />
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i|Unica+One" rel="stylesheet">
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-     <title>ST5K DESIGN</title>
-
-
-</head>
+  {% include head.html %}
 
 
 <body>
 
   <main class="content">
+
 <!-- INFORMATION SECTION FOR THE PORTFOLIO ITEM -->
     <section class="info">
 
@@ -31,17 +24,17 @@
           <div class="info-header-wrapper">
 
               <div class="header-icon">
-                <img src="img/print_icon.svg" width="45" height="45">
+                <img src="/icons/{{page.tags}}_icon.svg" width="45" height="45">
               </div>
 
               <header class="title_wrapper">
-                <h2 class="title_lg">Prints</h2>
+                <h2 class="title_lg">{{ page.collection }}</h2>
           </header>
 
           </div>
 
           <article class="copy-description">
-            <p class="copy_lg">Screenprinting has become a passion of mine recently. I have used this medium as a way to produce artwork that includes various subjects I am interested in. From history, to sports, to taxonomy, I cover many topics in my posters and t-shirts of which will be available for purchase in time.</p>
+            <p class="copy_lg">{{ content }}</p>
           </article>
 
 
@@ -57,11 +50,11 @@
         <li class="project_item">
           <a href="portfolio.html">
               <div class="project_thumbnail">
-                <img src="img/Leo_thumb.png"  width="100%" alt="">
+                <img src="{{ page.thumbnail }}"  width="100%" alt="">
               </div>
               <div class="project_info">
-                 <h4 class="project_title">Predator Series</h4>
-                 <p class="project_subtitle">Apex Preditors</p>
+                 <h4 class="project_title">{{ page.project_title }}</h4>
+                 <p class="project_subtitle">Apex Predators</p>
              </div>
           </a>
         </li>
